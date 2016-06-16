@@ -4,7 +4,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 {
     ui->setupUi(this);
 
-    QImage myImage;
     map = new Mapa();
     MyRobot = new CRobot();
     Navegador = new thread_robot(map,MyRobot,100);
@@ -25,9 +24,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 }
 
 void MainWindow::updateTime(){
-
     scene->addPixmap(QPixmap::fromImage(brain_mapping::img));
-
 }
 
 MainWindow::~MainWindow()

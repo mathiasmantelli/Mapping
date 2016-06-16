@@ -1,5 +1,4 @@
 #include <QApplication>
-#include <QApplication>
 #include "mainwindow.h"
 #include <QImage>
 #include <QtGui>

@@ -135,7 +135,7 @@ QImage Mapa::Gera_Imagem_Pixmap(bool Metodo, int max_x, int minx, int maxy, int 
         }
    }
 
-    img.save(QString("teste.png"));
+//    img.save(QString("map.png"));
     return img;
 }
 

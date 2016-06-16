@@ -102,11 +102,11 @@ void brain_mapping::Map_BAYES(){
 
 void brain_mapping::run(){
 
+    //GIRO 360
     while(MyRobot->GetAng_Robot() <= 0){
         MyRobot->Robot.setVel2(40,0);
         Map_HIMM();
     }
-
 
     Navegador->start();
     while(true){

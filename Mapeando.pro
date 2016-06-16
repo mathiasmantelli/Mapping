@@ -31,7 +31,6 @@ FORMS    += mainwindow.ui
 
 INCLUDEPATH += /usr/local/Aria/include
 
-LIBS += -L/usr/local/Aria/lib/ \
-    -lAria -ldl -lrt -lm
+LIBS += -L/usr/local/lib -L/usr/local/Aria/lib/ -lAria -ldl -lrt -lm
 
 
